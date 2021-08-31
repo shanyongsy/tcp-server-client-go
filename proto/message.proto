@@ -1,0 +1,12 @@
+syntax = "proto3";
+package msg;
+
+option go_package = "../pb";
+
+enum cmdId {
+  ECHO = 0;
+}
+
+message echoMsg {
+  string msg = 1;
+}
